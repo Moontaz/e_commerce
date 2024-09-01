@@ -1,0 +1,25 @@
+GET http://localhost:5000/users
+###
+GET http://localhost:5000/users/471b4d760fdd094c
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+   "name": "Tono",
+   "email": "tono@gmail.com",
+   "address": "Surabaya",
+   "gender": "Male"
+}
+###
+PATCH http://localhost:5000/users/579477e0f11efaf4
+Content-Type: application/json
+
+{
+   "name": "Tono Updated",
+   "email": "tono@gmail.com",
+   "address": "Surabaya",
+   "gender": "Male"
+}
+###
+DELETE http://localhost:5000/users/579477e0f11efaf4
